@@ -51,7 +51,6 @@ public class UserServiceImpl implements UserService {
             throw new UserException("User not found with id "+ id);
         }
         User existingUser = otp.get();
-
         existingUser.setFullName(user.getFullName());
         existingUser.setEmail(user.getEmail());
         existingUser.setRole(user.getRole());
